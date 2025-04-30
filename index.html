@@ -4,46 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/png">
     <title>Felipe Vega Realpe</title>
 </head>
 
 <body>
 
-    <div class="contenedor">
-        <header>
-            <a href="index.html">
-                <div class="icon">
-                    F
-                </div>
-                <p><span class="bold">Felipe</span> Realpe</p>
-            </a>
-        </header>
-        <div class="card-hero">
-            <div class="card-photo">
-                <img class="photo" src="Foto.jpg" alt="Felipe Vega">
+    <header>
+        <div class="contenido-header">
+            <div class="icon-page">
+                <a href="index.html">Realp</a>
             </div>
-            <div class="card-felipe">
-                <h1 class="nombre">Felipe Vega Realpe</h1>
-                <p class="titulo">Ingeniero en Automática Industrial</p>
-                <p class="perfil">Ingeniero en Automática Industrial con interés en el desarrollo de software. Con
-                    experiencia en programación de PLCs, diseño de HMI e instrumentación
-                    industrial. Y conocimientos en lenguajes de programación como Java, Python, HTML, CSS y JavaScript.
-                </p>
-                <a href="CV Felipe Realpe.pdf" download class="btn-descarga">Descargar CV</a>
-                <a href="" class="btn-contacto">Contacto</a>
-
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#about">SOBRE MI</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+    <main>
 
+        <section id="inicio" class="inicio">
+            <div class="card-felipe">
+                <figure class="card-photo">
+                    <img class="photo" src="Images/Foto.jpg" alt="Felipe">
+                </figure>
+                <h1 class="nombre">Felipe Vega Realpe</h1>
+                <h2 class="titulo">Ingeniero en Automática Industrial</h2>
+                <div class="redes">
+                    <a href="https://linkedin.com/in/feliperealp" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/FelipeRealp" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:contacto@feliperealp.com" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="contenedor-about">
+                <h2>Sobre mí</h2>
+                <p>
+                    ¡Hola! Soy <strong>Felipe Vega Realpe</strong>, Ingeniero en Automática Industrial con una gran
+                    pasión por la tecnología y el desarrollo de software.
+                </p>
+                <p>
+                    Tengo experiencia en programación de <strong>PLC</strong>, diseño de <strong>interfaces
+                        HMI</strong> e instrumentación industrial. A la vez, he ido ampliando mis conocimientos en
+                    desarrollo web, aprendiendo <strong>HTML</strong>, <strong>CSS</strong>,
+                    <strong>JavaScript</strong>, así como lenguajes como <strong>Java</strong> y
+                    <strong>Python</strong>.
+                </p>
+                <p>
+                    Actualmente me encuentro enfocado en crecer como <strong>desarrollador web fullstack</strong>,
+                    combinando mis habilidades técnicas con un fuerte compromiso por seguir aprendiendo y construyendo
+                    soluciones creativas.
+                </p>
+                <div class="contenedor-cv">
+                    <a href="CV Felipe Realpe.pdf" download class="boton-cv">
+                        <i class="fas fa-file-alt"></i> Descargar CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
