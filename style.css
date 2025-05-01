@@ -339,6 +339,35 @@ nav ul li a {
     align-items: center;
 }
 
+.contacto {
+    padding: 55px 20px 50px;
+    color: var(--texto-blanco);
+}
+
+.contenido-contacto {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacto-redes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contacto-redes a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--texto-blanco);
+}
+
+.contacto-redes a i {
+    font-size: 1.5rem;
+}
+
+
 @media (max-width: 850px) {
     .card-proyecto {
         background-color: var(--bloques-grisaceos);
