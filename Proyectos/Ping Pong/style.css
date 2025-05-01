@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 1000px;
+    height: 500px;
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+}
+
+.titulo {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #FFF;
+}
+
+.boton {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: #FFF;
+    font-family: 'Press Start 2P', monospace;
+    background-color: transparent;
+    border: 0;
+    display: inline-block;
+    align-self: center;
+    cursor: pointer;
+}
+
+.boton:hover {
+    border-bottom: 4px solid #FFF;
+}
+
+.oculto {
+    display: none;
+}
+
+.game {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.puntaje {
+    position: absolute;
+    left: 415px;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    gap: 15px;
+    background-color: transparent;
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.player {
+    position: absolute;
+    background-color: #FFF;
+    width: 20px;
+    height: 100px;
+}
+
+.playerUno {
+    top: 200px;
+    left: 10px;
+}
+
+.playerDos {
+    top: 200px;
+    right: 10px;
+}
+
+.ball {
+    position: absolute;
+    top: 240px;
+    left: 480px;
+    background-color: #FFF;
+    width: 20px;
+    height: 20px;
+}
+
+.resultado {
+    text-align: center;
+    background-color: transparent;
+    color: #FFF;
+}
+
+#ganador {
+    margin-bottom: 1.5rem;
+}
+
+#volverMenu {
+    display: block;
+    justify-self: center;
+}

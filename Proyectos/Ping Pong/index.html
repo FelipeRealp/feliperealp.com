@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="arcade-game-pong-gaming-svgrepo-com.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Ping Pong</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div id="menu" class="menu">
+            <h1 id="titulo" class="titulo">Ping Pong Game</h1>
+            <button id="unJugador" class="boton">Un Jugador</button>
+            <button id="dosJugadores" class="boton">Dos Jugadores</button>
+        </div>
+        <div id="game" class="game oculto">
+            <div class="puntaje">
+                <h2 id="puntajeUno" class="puntajeUno">0</h2>
+                <h2 id="puntajeDos" class="puntajeDos">0</h2>
+            </div>
+            <div id="playerUno" class="player playerUno"></div>
+            <div id="playerDos" class="player playerDos"></div>
+            <div id="ball" class="ball"></div>
+        </div>
+        <div id="resultado" class="resultado oculto">
+            <h2 id="ganador"></h2>
+            <button id="reset" class="boton">Jugar de nuevo</button>
+            <button id="volverMenu" class="boton">Menú principal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
