@@ -199,6 +199,53 @@ nav ul li a {
     color: var(--texto-especial);
 }
 
+.experiencia {
+    padding: 55px 20px 0;
+    color: var(--texto-blanco);
+}
+
+.contenedor-experiencia {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card-experiencia {
+    background-color: var(--bloques-grisaceos);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--texto-especial);
+}
+
+.experiencia-info .empresa {
+    font-size: 1.3rem;
+    color: var(--texto-especial);
+    margin-bottom: 5px;
+}
+
+.experiencia-info .cargo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experiencia-info .fecha {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.experiencia-info ul {
+    list-style: disc inside;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
+.experiencia-info li {
+    margin-bottom: 8px;
+}
+
+
 .skills {
     padding: 55px 20px 0;
     color: var(--texto-blanco);
