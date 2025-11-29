@@ -348,7 +348,7 @@ nav ul li a {
     color: var(--texto-especial);
 }
 
-.card-proyecto strong {
+strong {
     color: var(--texto-especial);
 }
 
