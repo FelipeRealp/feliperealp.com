@@ -51,15 +51,48 @@
           <h2 class="titulo">Ingeniero en Automática Industrial</h2>
           <h2 class="titulo">Desarrollador Fullstack Junior</h2>
           <div class="redes">
-            <a href="https://linkedin.com/in/feliperealp" target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/FelipeRealp" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="mailto:contacto@feliperealp.com" aria-label="Correo"
-              ><i class="fas fa-envelope"></i
-            ></a>
+            <a
+              href="https://linkedin.com/in/feliperealp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              onclick="
+                gtag('event', 'click', {
+                  event_category: 'Enlace Externo',
+                  event_label: 'LinkedIn',
+                })
+              "
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://github.com/FelipeRealp"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              onclick="
+                gtag('event', 'click', {
+                  event_category: 'Enlace Externo',
+                  event_label: 'GitHub',
+                })
+              "
+            >
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="mailto:contacto@feliperealp.com"
+              aria-label="Correo"
+              onclick="
+                gtag('event', 'click', {
+                  event_category: 'Contacto',
+                  event_label: 'Email',
+                })
+              "
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
       </section>
