@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto | Felipe Realp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&family=Bowlby+One&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HQDMRZTNZ9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-HQDMRZTNZ9");
+    </script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="contenido-header">
+        <div class="icon-page">
+          <a href="index.html">Realp</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html#about">Sobre mí</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="contacto.html" class="bold">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Formulario de Contacto -->
+    <main>
+      <section class="contacto-formulario">
+        <div class="contenedor-formulario">
+          <h2 class="titulo-seccion">Formulario de Contacto</h2>
+          <p class="descripcion-formulario">
+            Completa el siguiente formulario y me pondré en contacto contigo.
+          </p>
+
+          <form
+            action="https://formsubmit.co/contacto@feliperealp.com"
+            method="POST"
+          >
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required />
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <!-- Configuración de FormSubmit -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuevo mensaje desde tu portafolio"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://feliperealp.com/gracias.html"
+            />
+
+            <button
+              type="submit"
+              onclick="
+                gtag('event', 'form_submit', {
+                  event_category: 'Contacto',
+                  event_label: 'Formulario de Contacto',
+                })
+              "
+            >
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+  </body>
+</html>
